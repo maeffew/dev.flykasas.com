@@ -1,0 +1,264 @@
+<html data-reactroot="">
+<!-- Mirrored from www.framer.com/api/examples/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 06:15:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charSet="utf-8"/><title>Framer API | Examples</title><link rel="stylesheet" href="../static/styles/fonts.css"/><link rel="stylesheet" href="../static/styles/highlight.css"/><link rel="stylesheet" href="../static/styles/reset.css"/><link rel="shortcut icon" href="https://static.framer.com/api/favicon.ico"/><meta content="width=device-width, initial-scale=1" name="viewport"/><style data-styled="bEiISo gQgWkM gigunS kjStry kDHCcL cHfUvD jtlALO iCayni ihlAaD kYojoi LFgBS dpkNjW WATtD cDVKlo dgTWCU erkMwF iHWfTQ gjBtav emamtK wHaNG hmvVFK buGOIF imKVXi iTYwtn jMpmWD fcutyO fQIfoL dMcnim cYvPTm gJfTno kcOalg iCwohd" data-styled-version="4.3.2">
+/* sc-component-id: SubNavigation__SubSection-sc-1l9iako-0 */
+.iCwohd{display:block;padding-left:5px;margin-top:10px;margin-bottom:5px;font-size:13px;font-weight:400;color:#333;list-style:none;} .iCwohd:empty{display:none;} .iCwohd li a:hover{color:var(--accent);} .iCwohd li + li{margin-top:5px;} @media (max-width:560px){.iCwohd{display:none;}}
+/* sc-component-id: Menu__ListWrapper-sc-1j0hi7m-0 */
+.WATtD{padding-left:20px;} @media (max-width:800px){.WATtD{padding-left:0;}}
+/* sc-component-id: Menu__SubTitleElement-sc-1j0hi7m-1 */
+.cDVKlo{list-style:none;text-transform:uppercase;font-size:10px;font-weight:500;color:#aaa;-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;} li + .cDVKlo{margin-top:20px;padding-top:20px;width:calc(100% - 20px);} @media (max-width:800px){.cDVKlo{display:none;}}
+/* sc-component-id: Menu__ListItem-sc-1j0hi7m-2 */
+.dgTWCU{display:block;font-size:15px;font-weight:500;padding-top:10px;-webkit-transition:color 0.2s ease;transition:color 0.2s ease;list-style:none;} .theme-motion .dgTWCU{background:red !important;} .dgTWCU a{color:#222;} .dgTWCU.active > a{color:var(--accent);} .dgTWCU a:hover{color:var(--accent);} @media (max-width:800px){.dgTWCU{font-size:17px;border-bottom:1px solid #eee;padding:15px;}.dgTWCU a{display:block;}}
+/* sc-component-id: MobileToggle__Toggle-bh9zx5-0 */
+.ihlAaD{position:absolute;right:20px;z-index:1000;} @media (min-width:800px){.ihlAaD{display:none;}}
+/* sc-component-id: Sidebar__Header-r8est2-0 */
+.kDHCcL{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:58px;place-items:center;padding:15px 20px;border-bottom:1px solid rgba(0,0,0,0.05);}
+/* sc-component-id: Sidebar__Home-r8est2-1 */
+.cHfUvD{font-size:15px;font-weight:500;color:#222;-webkit-transition:color 0.2s ease;transition:color 0.2s ease;} .cHfUvD:hover{color:var(--accent);} .cHfUvD span{font-weight:600;padding-top:3px;-webkit-letter-spacing:-0.5px;-moz-letter-spacing:-0.5px;-ms-letter-spacing:-0.5px;letter-spacing:-0.5px;}
+/* sc-component-id: Sidebar__APISwitch-r8est2-2 */
+.kYojoi{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:46px;}
+/* sc-component-id: Sidebar__APISwitchItem-r8est2-3 */
+.LFgBS{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;padding-top:2px;place-items:center;place-content:center;font-size:15px;font-weight:500;color:#000;background:transparent;-webkit-transition:background 0.2s ease;transition:background 0.2s ease;} .LFgBS:hover{background:transparent;} .LFgBS:first-child{border-right:1px solid rgba(0,0,0,0.05);}.dpkNjW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;padding-top:2px;place-items:center;place-content:center;font-size:15px;font-weight:500;color:#666;background:#f6f6f6;-webkit-transition:background 0.2s ease;transition:background 0.2s ease;} .dpkNjW:hover{background:#f4f4f4;} .dpkNjW:first-child{border-right:1px solid rgba(0,0,0,0.05);}
+/* sc-component-id: Sidebar__Icon-r8est2-4 */
+.jtlALO{display:inline-block;position:relative;top:2px;} .jtlALO svg{margin-right:8px;}
+/* sc-component-id: Sidebar__SideBarHeader-r8est2-5 */
+.kjStry{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;border-bottom:1px solid rgba(0,0,0,0.05);margin-bottom:20px;} @media (max-width:800px){.kjStry{margin-bottom:0;}} .kjStry path{fill:currentColor;}
+/* sc-component-id: Sidebar__SideBarWrapper-r8est2-6 */
+.gigunS{position:fixed;top:0;left:0;width:250px;height:100%;background:#fafafa;border-right:1px solid rgba(0,0,0,0.05);overflow-y:auto;-webkit-transition:none;transition:none;z-index:1000;padding-bottom:20px;} .gigunS.has-clicked{-webkit-transition:height 0.2s ease;transition:height 0.2s ease;} @media (max-width:800px){.gigunS{width:100%;border-right:none;border-bottom:1px solid rgba(0,0,0,0.05);z-index:2000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;height:58px;overflow:hidden;-webkit-overflow-scrolling:touch;}.gigunS.is-open{height:100vh;overflow:auto;}}
+/* sc-component-id: Sidebar__VersionBadgeBackground-r8est2-7 */
+.iCayni{color:#666;background:#eee;padding:4px 9px 2px;margin-left:auto;border-radius:6px;font-weight:500;font-size:12px;} @media (max-width:800px){.iCayni{margin-right:40px;}}
+/* sc-component-id: Codebar-sc-1x9x0ki-0 */
+.imKVXi{position:fixed;top:0;right:0;width:calc(50% - 125px);height:100%;background:#151515;z-index:-1;} @media (min-width:1600px){.imKVXi{left:925px;width:100%;}} @media (max-width:1080px){.imKVXi{background:transparent;}}
+/* sc-component-id: Grid__GridDiv-a2vhhx-0 */
+.erkMwF{display:grid;-webkit-column-gap:100px;column-gap:100px;padding-right:80px;grid-template-columns:1fr 1fr;} .erkMwF .grid--exclude{display:contents;} .erkMwF *{grid-column-start:1;} .erkMwF pre{grid-row-start:2;grid-row-end:span 10;grid-column-start:2;padding-left:20px;} .erkMwF .error-graphic{grid-row-start:0;grid-row-end:span 10;grid-column-start:2;padding-left:20px;margin-top:0;} .erkMwF.framer-custom-mdx pre{grid-row-start:auto;grid-row-end:auto;} .erkMwF .header{grid-row-start:1;grid-row-end:3;grid-column-start:2;} .erkMwF .header.video{grid-row-start:auto;} .erkMwF.grid-code + .grid-code{margin-top:30px;} .erkMwF.grid-example{margin:30px 0;} .erkMwF div + div{margin-top:30px;} .erkMwF.framer-api.framer-api-empty,.erkMwF.grid-section-h2{margin-top:80px !important;} .erkMwF.grid-section-h3,.erkMwF.framer-api{margin-top:60px;} .erkMwF.grid-section-h2 + .Grid__GridDiv-a2vhhx-0.grid-section-h3{margin-top:20px;} .erkMwF.grid-section-h1 + .Grid__GridDiv-a2vhhx-0{margin-top:0;} .erkMwF.framer-api + .framer-custom-mdx,.grid-section-h2 + .erkMwF.framer-api{margin-top:30px;} .erkMwF.framer-api:not(.framer-api-empty) + .Grid__GridDiv-a2vhhx-0.framer-api,.erkMwF.framer-api + .erkMwF.grid-section-h2{position:relative;border-top:1px solid rgba(180,180,180,0.2);padding-top:60px;} .erkMwF.framer-api + .Grid__GridDiv-a2vhhx-0.framer-api:after,.erkMwF.framer-api + .erkMwF.grid-section-h2:after{content:"";position:absolute;top:-1px;width:100px;height:1px;background:rgba(180,180,180,0.2);left:-100px;} .erkMwF.grid-section-h2 + .Grid__GridDiv-a2vhhx-0.framer-api,.erkMwF.framer-api-empty + .erkMwF.framer-api{border:none !important;padding-top:none !important;} .erkMwF.grid-section-h2 + .Grid__GridDiv-a2vhhx-0.framer-api:after,.erkMwF.framer-api-empty + .erkMwF.framer-api:after{background:none;} @media (min-width:1600px){.erkMwF{grid-template-columns:555px 1fr;}.erkMwF *{max-width:600px;}.erkMwF pre,.erkMwF pre code{max-width:100%;}.erkMwF .error-graphic{max-width:100%;margin-left:10px;width:calc(100%);}} @media (max-width:1080px){.erkMwF{display:block;}.erkMwF pre{padding-left:0;}.erkMwF .error-graphic{background:#151515;border-radius:10px;-webkit-order:1;-ms-flex-order:1;order:1;height:250px;max-width:400px;margin-bottom:50px;padding-left:0;}.erkMwF .error-message{-webkit-order:2;-ms-flex-order:2;order:2;}.erkMwF.four-o-four{height:100%;max-height:calc(100vh - 100px);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;place-content:center;place-items:center;}} @media (max-width:800px){.erkMwF{padding-right:0;}}
+/* sc-component-id: Grid__Center-a2vhhx-1 */
+.iHWfTQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;height:calc(100vh - 110px);place-content:center;place-items:center;text-align:center;} .iHWfTQ h2{position:static !important;padding:0 !important;left:0 !important;margin-bottom:0 !important;} @media (max-width:1080px){.iHWfTQ{height:auto;}} @media (max-width:800px){}
+/* sc-component-id: Permalink__PermalinkSpan-sc-1fc5ejm-0 */
+.jMpmWD{position:absolute;left:0;opacity:0;pointer-events:none;} h2 .jMpmWD{font-size:19px;font-weight:500;top:5px;} h2:hover .jMpmWD,h3:hover .jMpmWD{opacity:1;pointer-events:all;} .jMpmWD .copy{position:absolute;left:0;color:#999;} .jMpmWD .copy:hover{color:var(--accent);} .jMpmWD .copy:active{color:#000;}
+/* sc-component-id: Header__AnimationCharacter-sc-13h6l7-2 */
+.buGOIF{-webkit-transform:translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px);-webkit-animation:hmvVFK 1s cubic-bezier(0.445,0.05,0.55,0.95) infinite alternate;animation:hmvVFK 1s cubic-bezier(0.445,0.05,0.55,0.95) infinite alternate;} .buGOIF:nth-of-type(2){-webkit-animation-delay:-0.15s;animation-delay:-0.15s;} .buGOIF:nth-of-type(3){-webkit-animation-delay:-0.3s;animation-delay:-0.3s;}
+/* sc-component-id: Markdown__Callout-sc-1x6b0l8-0 */
+.gJfTno{font-size:13px;border-radius:6px;background:#f8f8f8;padding:15px 20px;font-weight:400;margin-bottom:60px;color:#333;} .gJfTno p:last-of-type{margin-bottom:0;} .gJfTno a{font-weight:500;}
+/* sc-component-id: Markdown__MarkdownStyles-sc-1x6b0l8-2 */
+.gjBtav p{font-weight:400;font-size:16px;line-height:1.5;color:#333;} .gjBtav img{-webkit-user-drag:none;max-width:100%;display:block;border-radius:6px;} .gjBtav ol,.gjBtav ul,.gjBtav li{list-style:none;} .gjBtav a{color:inherit;} .gjBtav a,.gjBtav ol a{color:var(--accent);-webkit-transition:opacity 0.2s ease;transition:opacity 0.2s ease;} .gjBtav ol li,.gjBtav ul li{margin:0 0 5px 16px;list-style-type:none;color:#333;} .gjBtav ol li:before,.gjBtav ul li:before{float:left;margin-left:-16px;color:#999;content:"-";} .gjBtav strong{font-weight:600;} .gjBtav p strong,.gjBtav li strong{font-weight:500;overflow:hidden;} .gjBtav p em,.gjBtav li em{font-style:italic;} .gjBtav h1{font-size:40px;font-weight:600;-webkit-letter-spacing:-1.5px;-moz-letter-spacing:-1.5px;-ms-letter-spacing:-1.5px;letter-spacing:-1.5px;color:#111;} .gjBtav h2{font-size:24px;-webkit-letter-spacing:-0.5px;-moz-letter-spacing:-0.5px;-ms-letter-spacing:-0.5px;letter-spacing:-0.5px;font-weight:600;position:relative;padding-left:25px;left:-25px;color:#111;} .gjBtav h3{font-size:17px;font-weight:500;position:relative;padding-left:20px;left:-20px;color:#111;} .gjBtav h3 span{font-weight:400;color:#777;} .gjBtav h4{font-size:15px;font-weight:500;color:#333;} .gjBtav h5{font-size:13px;font-weight:500;color:#333;} .gjBtav .lead{display:block;font-weight:400;font-size:26px;line-height:1.4;margin-bottom:40px;color:#333;} .gjBtav .lead.has-header{margin-bottom:100px;} .gjBtav .DocRefTag{color:#333;} .gjBtav hr{border:none;width:calc(100% + 100px);height:1px;background:rgba(180,180,180,0.2);position:relative;left:-100px;z-index:0;margin-top:60px;} .gjBtav h1,.gjBtav h2,.gjBtav p,.gjBtav ol,.gjBtav ul{margin-bottom:20px;} .gjBtav h3,.gjBtav h4{margin-bottom:15px;} .gjBtav h5,.gjBtav h6{margin-bottom:10px;} .gjBtav div + h5{margin-top:10px;} .gjBtav pre + h3{margin-top:30px;} .gjBtav .followed-by-list{margin-bottom:30px;} @media (max-width:1080px){.gjBtav .lead.has-header{margin-bottom:0;}.gjBtav pre code{max-width:100%;padding:30px;font-size:12px;border-radius:8px;}.gjBtav pre + ul,.gjBtav pre + p,.gjBtav pre + div,.gjBtav pre + .cta{margin-top:30px;}.gjBtav div + table,.gjBtav div + h5{margin-top:30px;}.gjBtav pre code{background:#151515;}.gjBtav pre:after{background:transparent;}.gjBtav hr{width:calc(100% + 200px);}} @media (max-width:560px){.gjBtav pre code{padding:20px;-webkit-overflow-scrolling:touch;}.gjBtav .lead{font-size:22px;}}
+/* sc-component-id: Template__Body-e0y3nm-0 */
+.bEiISo{--library:#05f;--motion:#60f;--accent:var(--library);--accent-selection:rgba(0,85,255,0.9);--accent-backdrop:rgba(0,85,255,0.1);--animation-left:#09f;--animation-middle:#adf;--animation-right:#fff;font-family:Colfax,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-feature-settings:"liga","kern";text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overscroll-behavior:none;} .bEiISo *::selection{background:var(--accent-selection);color:#fff;} .bEiISo.is-mouseover-code{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;} .bEiISo.is-mouseover-code pre code{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;} .bEiISo .link-ref-missing{color:#f97 !important;} .bEiISo.debug-mode .framer-api{position:relative;} .bEiISo.debug-mode .framer-api::after{position:absolute;display:block;content:"";top:-6px;left:-6px;right:-6px;bottom:-6px;border:1px solid rgba(255,0,0,0.2);border-radius:3px;pointer-events:none;background:rgba(255,0,0,0.1) repeating-linear-gradient( 45deg,transparent,transparent 10px,rgba(255,0,0,0.1) 10px,rgba(255,0,0,0.1) 20px );}
+/* sc-component-id: Template__Main-e0y3nm-1 */
+.gQgWkM{max-width:100%;padding-left:310px;padding-top:50px;padding-bottom:50px;margin-left:auto;margin-right:auto;} @media (max-width:800px){.gQgWkM{padding:100px 40px;overflow-x:hidden;}} @media (max-width:560px){.gQgWkM{padding:100px 20px;}}
+/* sc-component-id: Template__EditButton-e0y3nm-2 */
+.iTYwtn{position:fixed;font-size:13px;font-weight:500;top:10px;right:10px;color:#fff;background:rgba(255,255,255,0.1);border-radius:6px;padding:8px 12px 6px;-webkit-transition:background 0.2s ease;transition:background 0.2s ease;z-index:1000;} .iTYwtn:hover{background:rgba(255,255,255,0.15);} @media (max-width:800px){.iTYwtn{display:none;}}
+/* sc-component-id: sc-404__Stack-sc-1op9u5z-0 */
+.wHaNG{width:212px;height:60px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;place-items:center;} @media (max-width:560px){.wHaNG{-webkit-transform:scale(0.75);-ms-transform:scale(0.75);transform:scale(0.75);}} .wHaNG >:nth-child(2){margin-left:4px;}
+/* sc-component-id: ReleaseBadge__BetaBadge-sc-1kypu43-1 */
+.cYvPTm{background:var(--accent-backdrop);color:var(--accent) !important;font-size:13px;font-weight:600 !important;-webkit-letter-spacing:0;-moz-letter-spacing:0;-ms-letter-spacing:0;letter-spacing:0;text-transform:uppercase;padding:4px 6px 3px;border-radius:5px;position:relative;top:-4px;margin-left:5px;} h3 .cYvPTm{border-radius:4px;font-size:11px;top:-1px;}
+/* sc-component-id: APIParams__Table-lbkeuo-0 */
+.kcOalg{font-size:15px;line-height:1.5;box-shadow:0 0 0 1px #eee;border-collapse:collapse;border-radius:6px;overflow:hidden;width:100%;} .kcOalg p{font-size:13px;color:#666;margin-bottom:0;} .kcOalg th{font-weight:500;text-align:left;color:#444;} .kcOalg th,.kcOalg td{padding:10px;} .kcOalg tr{border-top:1px solid #eee;} .kcOalg tr:first-child{border-top:none;} .kcOalg tr:nth-child(even){background:#fafafa;} .kcOalg .description{font-weight:400;display:block;} .kcOalg .type{color:#999;} .kcOalg ul{margin-top:10px;font-size:13px;color:#666;margin-bottom:0;} .kcOalg code{background:transparent;padding:0;font-size:inherit;font-family:inherit;font-weight:500 !important;color:inherit !important;}
+/* sc-component-id: EmbeddedExample__EmbeddedExampleBackground-fgwn6i-0 */
+.fcutyO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;place-content:center;place-items:center;height:320px;background:#151515;border-radius:8px;margin:20px 0;width:100%;max-width:100%;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;} @media (min-width:1080px){.fcutyO{margin:0;}}
+/* sc-component-id: InlineCallToAction__InlineButton-zzo20m-1 */
+.emamtK{display:inline-block;font-weight:500;color:var(--accent);background:var(--accent-backdrop);padding:7px 12px 5px;border-radius:5px;font-size:15px;} .emamtK:hover{opacity:0.7;} @media (max-width:1080px){.emamtK{margin-bottom:20px;}} @media (min-width:800px){.emamtK{margin-bottom:20px;}}
+/* sc-component-id: sc-keyframes-hmvVFK */
+@-webkit-keyframes hmvVFK{0%{-webkit-transform:translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px);}100%{-webkit-transform:translateY(15px);-ms-transform:translateY(15px);transform:translateY(15px);}} @keyframes hmvVFK{0%{-webkit-transform:translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px);}100%{-webkit-transform:translateY(15px);-ms-transform:translateY(15px);transform:translateY(15px);}}
+/* sc-component-id: AnimatePresence__Container-sc-1vr3gd7-0 */
+.fQIfoL{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;height:100%;}
+/* sc-component-id: AnimatePresence__Slide-sc-1vr3gd7-1 */
+.dMcnim{position:absolute;top:0;left:0;right:0;bottom:0;background-size:cover;background-repeat:no-repeat;background-position:center;margin:0 !important;padding:0 !important;}</style><style>component { display: contents; }</style><script>window.Prism = {manual: true}</script><meta name="title" content="Framer API"/><meta name="description" content="A JavaScript library for rapid interactive prototyping for web and mobile."/><meta property="og:type" content="website"/><meta property="og:url" content="https://framer.com/api"/><meta property="og:title" content="Framer API | Examples"/><meta property="og:description" content="A JavaScript library for rapid interactive prototyping for web and mobile."/><meta property="og:image" content="https://static.framer.com/api/social.png"/><meta name="twitter:card" content="photo"/><meta name="twitter:site" content="@framer"/><meta name="twitter:creator" content="@framer"/><meta name="twitter:title" content="Framer API | Examples"/><meta name="twitter:description" content="A JavaScript library for rapid interactive prototyping for web and mobile."/><meta name="twitter:image:src" content="https://static.framer.com/api/social.png"/><meta name="twitter:domain" content="https://framer.com/api"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37076997-17"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', "UA-37076997-17");</script></head><body class="Template__Body-e0y3nm-0 bEiISo"><main class="wrapper Template__Main-e0y3nm-1 gQgWkM"><aside class="side-bar-wrapper Sidebar__SideBarWrapper-r8est2-6 gigunS"><div class="Sidebar__SideBarHeader-r8est2-5 kjStry"><div class="Sidebar__Header-r8est2-0 kDHCcL"><a href="../index.html" class="Sidebar__Home-r8est2-1 cHfUvD"><div class="Sidebar__Icon-r8est2-4 jtlALO"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15" height="15"><path d="M10 0v5H5L0 0zM0 5h5l5 5H5v5l-5-5z"></path></svg></div><span>API</span></a><div class="Sidebar__VersionBadgeBackground-r8est2-7 iCayni">v  <!-- -->1.2.2 </div><component data-component-props="[&quot;Component.MobileToggle&quot;,{},[]]"><div class="MobileToggle__Toggle-bh9zx5-0 ihlAaD"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M2 4h16v2H2zM2 9h16v2H2zM2 14h16v2H2z" fill="hsl(0, 0%, 0%)"></path></svg></div></component></div><div class="Sidebar__APISwitch-r8est2-2 kYojoi"><a href="../index.html" class="Sidebar__APISwitchItem-r8est2-3 LFgBS">Library</a><a href="../motion/index.html" class="Sidebar__APISwitchItem-r8est2-3 dpkNjW">Motion</a></div></div><ul class="Menu__ListWrapper-sc-1j0hi7m-0 WATtD"><li class="Menu__SubTitleElement-sc-1j0hi7m-1 cDVKlo">Get Started</li><li class="home Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../index.html" target="">Introduction<!-- --> </a></li><li class="guide Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../tutorial/index.html" target="">Tutorial<!-- --> </a></li><li class="examples active Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="index.html" target="">Examples<!-- --> </a><component data-component-props="[&quot;Component.SubNavigation&quot;,{},[]]"><ul class="SubNavigation__SubSection-sc-1l9iako-0 iCwohd"></ul></component></li><li class="guide external Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../../books/framer-guide-to-react/index.html" target="_blank">ES6 and React<!-- --> <!-- -->›</a></li><li class="Menu__SubTitleElement-sc-1j0hi7m-1 cDVKlo">Library</li><li class="frame Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../frame/index.html" target="">Frame<!-- --> </a></li><li class="animation Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../animation/index.html" target="">Animation<!-- --> </a></li><li class="color Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../color/index.html" target="">Color<!-- --> </a></li><li class="page Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../page/index.html" target="">Page<!-- --> </a></li><li class="scroll Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../scroll/index.html" target="">Scroll<!-- --> </a></li><li class="stack Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../stack/index.html" target="">Stack<!-- --> </a></li><li class="stack Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../utilities/index.html" target="">Utilities<!-- --> </a></li><li class="Menu__SubTitleElement-sc-1j0hi7m-1 cDVKlo">Framer X</li><li class="assets Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../assets/index.html" target="">Assets<!-- --> </a></li><li class="data Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../data/index.html" target="">Data &amp; Overrides<!-- --> </a></li><li class="canvas-components Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../canvas-components/index.html" target="">CanvasComponents<!-- --> </a></li><li class="property-controls Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../property-controls/index.html" target="">PropertyControls<!-- --> </a></li><li class="render-target Menu__ListItem-sc-1j0hi7m-2 dgTWCU"><a href="../render-target/index.html" target="">RenderTarget<!-- --> </a></li></ul></aside><a target="_blank" rel="noopener" href="https://github.com/framer/api-docs/edit/master/pages/examples.mdx" class="Template__EditButton-e0y3nm-2 iTYwtn">Edit Page</a><div class="Markdown__MarkdownStyles-sc-1x6b0l8-2 gjBtav"><div class="grid-2 framer-custom-mdx grid-section-h1 Grid__GridDiv-a2vhhx-0 erkMwF"><h1><span class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#examples&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#examples">#</a></component><span id="examples" data-permalink-id="examples" data-permalink-path="/api/examples/#examples" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Examples</h1><span class="lead">Simple examples for animation, gestures, components, transforms and more.</span></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="frame" data-permalink-name="Frame" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#frame&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#frame">#</a></component><span id="frame" data-permalink-id="frame" data-permalink-path="/api/examples/#frame" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Frame</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>The <code>Frame</code> is a basic container for layout, styling, animation and events. It’s essentially a <code>div</code> element with extra options and smart defaults. Here, you can see how easy it is to add visual properties, like <code>background</code> and <code>radius</code>. Plus, we include shorthand properties that make it easier to quickly customize elements, like <code>size</code>, which sets both <code>width</code> and <code>height</code>.</p><a href="https://codesandbox.io/s/62km0298rk" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=6" highlight="6">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Frame size={150} background={&quot;#fff&quot;} radius={30} /&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="stack" data-permalink-name="Stack" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#stack&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#stack">#</a></component><span id="stack" data-permalink-id="stack" data-permalink-path="/api/examples/#stack" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Stack</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Stacks help you easily create flexible and automatically distributed layouts with Frames.
+It’s based on a <code>Frame</code>, which means it supports all Frame properties. In this example, we’re displaying a set of Frames. Notice how Stack handles the layout. It’s very easy to customize too: try setting <code>direction</code> to <code>&quot;vertical&quot;</code>, and notice how all Frames adapt.</p><a href="https://codesandbox.io/s/o9y86o898q" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=6-10" highlight="6-10">import * as React from &quot;react&quot;
+import { Frame, Stack } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Stack size={150} gap={10} direction={&quot;horizontal&quot;}&gt;
+      &lt;Frame size={40} background={&quot;#fff&quot;} radius={40} /&gt;
+      &lt;Frame size={40} background={&quot;#fff&quot;} radius={40} /&gt;
+      &lt;Frame size={40} background={&quot;#fff&quot;} radius={40} /&gt;
+    &lt;/Stack&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="animate" data-permalink-name="Animate" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#animate&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#animate">#</a></component><span id="animate" data-permalink-id="animate" data-permalink-path="/api/examples/#animate" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Animate</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Here, we’re animating the <code>rotate</code> property of a <code>Frame</code>.
+Then, we’re using the <code>animate</code> property to set a new <code>rotate</code> property.
+With the <code>transition</code> property, we can customize the animation options, like set a custom <code>duration</code> of 5 seconds.</p><a href="https://codesandbox.io/s/ykppk6k3wv" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=6-9" highlight="6-9">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Frame
+      animate={{ rotate: 360 }}
+      transition={{ duration: 1 }}
+    /&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h3 Grid__GridDiv-a2vhhx-0 erkMwF"><h3><span class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#loop&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#loop">#</a></component><span id="loop" data-permalink-id="loop" data-permalink-path="/api/examples/#loop" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Loop</h3></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>The <code>transition</code> property includes a number of properties that allow you to customize the animation.
+In this example, we’ll create an infinitely looping animation.
+Here, we’re setting the <code>loop</code> property to <code>Infinity</code>, and the <code>ease</code> to <code>linear</code>, for a perfectly looping animation. This is useful for designing progress indicators, like spinners.</p><a href="https://codesandbox.io/s/wqz8n1wk05" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=6-13" highlight="6-13">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Frame
+      animate={{ rotate: 360 }}
+      transition={{
+        duration: 2,
+        loop: Infinity,
+        ease: &quot;linear&quot;,
+      }}
+    /&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h3 Grid__GridDiv-a2vhhx-0 erkMwF"><h3><span class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#cycle&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#cycle">#</a></component><span id="cycle" data-permalink-id="cycle" data-permalink-path="/api/examples/#cycle" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Cycle</h3></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>You can cycle through animations with the <code>useCycle</code> method from Framer.
+Here, we’re cycling between 2 sets of properties on every tap.</p><a href="https://codesandbox.io/s/xl7nmv46wq" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=2,5-8,10" highlight="2,5-8,10">import * as React from &quot;react&quot;
+import { Frame, useCycle } from &quot;framer&quot;
+
+export function MyComponent() {
+  const [animate, cycle] = useCycle(
+    { scale: 1.5, rotate: 0 },
+    { scale: 1.0, rotate: 90 }
+  )
+
+  return &lt;Frame animate={animate} onTap={() =&gt; cycle()} /&gt;
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h3 Grid__GridDiv-a2vhhx-0 erkMwF"><h3><span class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#color&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#color">#</a></component><span id="color" data-permalink-id="color" data-permalink-path="/api/examples/#color" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Color</h3></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Color strings can also be animated by using the <code>background</code> property. In this example, we’re infinitely animating from light blue to purple and back again (by using the <code>yoyo</code> property and setting it to <code>Infinity</code>) with a <code>duration</code> of 1 second.</p><a href="https://codesandbox.io/s/vv8ll0pmk7" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=6-13" highlight="6-13">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Frame
+      animate={{ background: &quot;#85F&quot; }}
+      transition={{
+        duration: 1,
+        yoyo: Infinity,
+      }}
+      background={&quot;#0CF&quot;}
+    /&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h3 Grid__GridDiv-a2vhhx-0 erkMwF"><h3><span class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#arrays&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#arrays">#</a></component><span id="arrays" data-permalink-id="arrays" data-permalink-path="/api/examples/#arrays" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Arrays</h3></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Next to single values, you can also animate arrays of values within the <code>animate</code> property. In this example, we’re infinitely animating between three different colors (by using the <code>yoyo</code> property and setting it to <code>Infinity</code>) with a <code>duration</code> of 2 seconds.</p><a href="https://codesandbox.io/s/o4j24j2zmq" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=6-13" highlight="6-13">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Frame
+      animate={{ background: [&quot;#F05&quot;, &quot;#85F&quot;, &quot;#0CF&quot;] }}
+      transition={{
+        duration: 2,
+        yoyo: Infinity,
+      }}
+      background={&quot;#0CF&quot;}
+    /&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="gestures" data-permalink-name="Gestures" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#gestures&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#gestures">#</a></component><span id="gestures" data-permalink-id="gestures" data-permalink-path="/api/examples/#gestures" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Gestures</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Let’s start by simply animating a <code>Frame</code> when tapping on it.
+We’ll create two constants, a default <code>rotate</code> value of <code>0</code> and a <code>setState</code> method.</p><p>Then, a new function that takes the <code>rotate</code> value, and adds <code>90</code> to it every time.
+Finally, we’ll pass along <code>rotate</code> to the <code>animate</code> property, and the <code>toggleRotate</code> method to <code>onTap</code>.</p><a href="https://codesandbox.io/s/jlq97yryk9" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=2,6-7,9" highlight="2,6-7,9">import * as React from &quot;react&quot;
+import { useState } from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  const [rotate, setRotate] = useState(0)
+  const toggleRotate = () =&gt; setRotate(rotate + 90)
+
+  return &lt;Frame animate={{ rotate }} onTap={toggleRotate} /&gt;
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h3 Grid__GridDiv-a2vhhx-0 erkMwF"><h3><span class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#on-hover&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#on-hover">#</a></component><span id="on-hover" data-permalink-id="on-hover" data-permalink-path="/api/examples/#on-hover" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>On Hover</h3></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Now, let’s simply scale down a <code>Frame</code> when hovering it.
+We can use the <code>whileHover</code> property, and pass along a property an its value.</p><a href="https://codesandbox.io/s/8zoqqj2x2j" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=5" highlight="5">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return &lt;Frame whileHover={{ scale: 0.75 }} /&gt;
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="dragging" data-permalink-name="Dragging" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#dragging&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#dragging">#</a></component><span id="dragging" data-permalink-id="dragging" data-permalink-path="/api/examples/#dragging" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Dragging</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><p>You can easily make any <code>Frame</code> draggable with the <code>drag</code> property. It can be set to control the drag axis using <code>&quot;x&quot;</code> or <code>&quot;y&quot;</code>. It can also be dragged in any direction by setting it to <code>true</code>.</p><pre><code class="language-jsx" metastring="highlight=5" highlight="5">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return &lt;Frame drag={true} /&gt;
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h3 Grid__GridDiv-a2vhhx-0 erkMwF"><h3><span class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#constraints&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#constraints">#</a></component><span id="constraints" data-permalink-id="constraints" data-permalink-path="/api/examples/#constraints" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Constraints</h3></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>To add <code>contraints</code> and limit the drag area, you can include the <code>dragConstraints</code> property.
+Pass along an object with <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code> values to define the dragging region.</p><p>The values are measured relatively to the current object, so if you wanted to allow for <code>100</code> pixels of dragging to the left side of a <code>Frame</code>, you would have to add <code>left: -100</code>.</p><a href="https://codesandbox.io/s/53mv19r5r4" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=6-14" highlight="6-14">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Frame
+      drag={true}
+      dragConstraints={{
+        left: -100,
+        right: 100,
+        top: -100,
+        bottom: 100,
+      }}
+    /&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="scrolling" data-permalink-name="Scrolling" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#scrolling&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#scrolling">#</a></component><span id="scrolling" data-permalink-id="scrolling" data-permalink-path="/api/examples/#scrolling" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Scrolling</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>For scrolling, you can wrap Frames in a <code>Scroll</code> component, to make them automatically scrollable. Make sure the Frame or collection of Frames together exceed either the width or the height of the <code>Scroll</code> component. Scrolling direction is set to <code>&quot;vertical&quot;</code> by default. The content size is automatically calculated.</p><a href="https://codesandbox.io/s/zqk53xj9k3" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=2,6-10" highlight="2,6-10">import * as React from &quot;react&quot;
+import { Frame, Scroll } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Scroll height={150}&gt;
+      &lt;Frame height={70} /&gt;
+      &lt;Frame height={70} top={80} /&gt;
+      &lt;Frame height={70} top={160} /&gt;
+    &lt;/Scroll&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="paging" data-permalink-name="Paging" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#paging&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#paging">#</a></component><span id="paging" data-permalink-id="paging" data-permalink-path="/api/examples/#paging" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Paging</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>For paging, you can wrap Frames in a <code>Page</code> component to make them swipeable. Optionally, custom transition properties can be provided. Swipe direction is set to <code>&quot;horizontal&quot;</code> by default. The content size is automatically calculated.</p><a href="https://codesandbox.io/s/88j3049zr9" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=2,6-10" highlight="2,6-10">import * as React from &quot;react&quot;
+import { Frame, Page } from &quot;framer&quot;
+
+export function MyComponent() {
+  return (
+    &lt;Page&gt;
+      &lt;Frame /&gt;
+      &lt;Frame /&gt;
+      &lt;Frame /&gt;
+    &lt;/Page&gt;
+  )
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="transforms" data-permalink-name="Transforms" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#transforms&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#transforms">#</a></component><span id="transforms" data-permalink-id="transforms" data-permalink-path="/api/examples/#transforms" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Transforms</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Here, we’re using two custom Hooks in Framer to transform values from one range to another.
+The <code>useMotionValue</code> provides an animatable and shareable value, which we’ll use for the <code>x</code> position.
+Then, we’ll transform that value from a range of <code>[-200, 200]</code> to a range that makes sense for <code>scale</code>.
+Finally, we’ll apply both properties to the <code>Frame</code>.</p><a href="https://codesandbox.io/s/l0061n7v7" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=2,5-6,8" highlight="2,5-6,8">import * as React from &quot;react&quot;
+import { Frame, useMotionValue, useTransform } from &quot;framer&quot;
+
+export function MyComponent() {
+  const x = useMotionValue(0)
+  const scale = useTransform(x, [-200, 200], [1.5, 0.5])
+
+  return &lt;Frame drag={&quot;x&quot;} x={x} scale={scale} /&gt;
+}
+</code></pre></div><hr/><div class="grid-2 framer-custom-mdx grid-section-h2 Grid__GridDiv-a2vhhx-0 erkMwF"><h2><span data-permalink-id="variants" data-permalink-name="Variants" class="Permalink__PermalinkSpan-sc-1fc5ejm-0 jMpmWD"><component data-component-props="[&quot;Component.CopyToClipboardElement&quot;,{&quot;title&quot;:&quot;Copy Link&quot;,&quot;className&quot;:&quot;copy&quot;,&quot;href&quot;:&quot;#variants&quot;},&quot;#&quot;]"><a title="Copy Link" class="copy" href="#variants">#</a></component><span id="variants" data-permalink-id="variants" data-permalink-path="/api/examples/#variants" aria-hidden="true" style="position:absolute;top:-60px;display:block"></span></span>Variants</h2></div><div class="grid-2 framer-custom-mdx grid-code Grid__GridDiv-a2vhhx-0 erkMwF"><div><p>Variants are collections of visual properties, like states, that you can animate or cycle between.
+For example, buttons usually have a hover state next to their default state.
+On hover, perhaps the <code>background</code> and <code>boxShadow</code> are changed.
+These properties can be defined in <code>variants</code>.</p><p>First, we’re defining the variants, which are essentially collections of visual properties. In this case, they’ll each contain a <code>scale</code> and a <code>rotate</code> value. We’ll call them <code>variantA</code> and <code>variantB</code> respectively.</p><p>Finally, we’re referencing the properties using the <code>variants</code> property, and animating to <code>variantB</code> on hover with the <code>whileHover</code> property.</p><a href="https://codesandbox.io/s/98vm5qo84" target="_blank" class="InlineCallToAction__InlineButton-zzo20m-1 emamtK">Open Example</a></div><pre><code class="language-jsx" metastring="highlight=5-8,11-15" highlight="5-8,11-15">import * as React from &quot;react&quot;
+import { Frame } from &quot;framer&quot;
+
+export function MyComponent() {
+  const variants = {
+    variantA: { scale: 0.75, rotate: 0 },
+    variantB: { scale: 1.0, rotate: 90 },
+  }
+
+  return (
+    &lt;Frame
+      initial={&quot;variantA&quot;}
+      whileHover={&quot;variantB&quot;}
+      variants={variants}
+    /&gt;
+  )
+}
+</code></pre></div></div><aside class="codebar Codebar-sc-1x9x0ki-0 imKVXi"></aside></main><script src="../components.js"></script></body>
+<!-- Mirrored from www.framer.com/api/examples/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 06:15:03 GMT -->
+</html>

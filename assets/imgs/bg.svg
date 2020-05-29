@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1440" height="1024"></rect>
+        <g id="Group" transform="translate(179.500000, 0.000000)" stroke="#C4C4C4">
+            <line x1="0.5" y1="0" x2="0.5" y2="1024" id="Path-35"></line>
+            <line x1="180.5" y1="0" x2="180.5" y2="1024" id="Path-36"></line>
+            <line x1="360.5" y1="0" x2="360.5" y2="1024" id="Path-37"></line>
+            <line x1="540" y1="0" x2="540" y2="1024" id="Path-35"></line>
+            <line x1="720" y1="0" x2="720" y2="1024" id="Path-36"></line>
+            <line x1="900" y1="0" x2="900" y2="1024" id="Path-37"></line>
+            <line x1="1080.5" y1="0" x2="1080.5" y2="1024" id="Path-38"></line>
+        </g>
+    </g>
+</svg>
